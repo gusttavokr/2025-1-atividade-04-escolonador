@@ -5,6 +5,7 @@ FROM fedora:latest
 RUN dnf -y update && \
     dnf -y install findutils && \
     dnf -y install fish && \
+    dnf -y install gcc && \
     dnf clean all
 
 # Cria um diretório para a aplicação
